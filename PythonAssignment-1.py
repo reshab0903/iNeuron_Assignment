@@ -250,6 +250,10 @@ numbers = [12, 75, 150, 180, 145, 525, 50]
 for i in numbers:    
     if(i>500):#checking if element is greater than 500 if True the break the loop else continue
        break
-    elif (i%5==0 and i<150):#checking if element is divsible by 5 and is less than 150 
-        print(i) 
-## Answer is 75,145
+    elif (i>150): #skipping the value if greater than 150
+        continue 
+    else:
+        if(i%5==0): #checking if element is divsible by 5
+            print(i)
+
+## Answer is 75,145,150
